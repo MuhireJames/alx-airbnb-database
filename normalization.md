@@ -107,5 +107,3 @@ This document presents the final schema after normalization to **Third Normal Fo
 
 ---
 
-
----
