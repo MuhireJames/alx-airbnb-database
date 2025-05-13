@@ -2,7 +2,7 @@
 SELECT *
 FROM Booking 
 INNER JOIN User  ON USER.user_id = Booking.booking_id
-ORDER BY b.start_date DESC;
+ORDER BY Booking.start_date DESC;
 
 -- 2. LEFT JOIN: Retrieve all properties and their reviews, including properties that have no reviews
 SELECT 
