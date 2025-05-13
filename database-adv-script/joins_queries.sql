@@ -1,8 +1,17 @@
 -- 1. INNER JOIN: Retrieve all bookings and the respective users who made those bookings
-SELECT *
-FROM Booking 
-INNER JOIN User  ON USER.user_id = Booking.booking_id
+SELECT 
+    Booking.booking_id,
+    Booking.property_id,
+    Booking.start_date,
+    Booking.end_date,
+    Booking.status,
+    User.first_name,
+    User.last_name,
+    User.email
+FROM Booking
+INNER JOIN User ON User.user_id = Booking.user_id
 ORDER BY Booking.start_date DESC;
+
 
 -- 2. LEFT JOIN: Retrieve all properties and their reviews, including properties that have no reviews
 SELECT 
